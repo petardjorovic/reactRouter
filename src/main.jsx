@@ -7,12 +7,14 @@ import ProductsPage from "./pages/ProductsPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
 
 // step 1: create router
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
